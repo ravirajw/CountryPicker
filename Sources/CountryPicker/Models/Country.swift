@@ -13,16 +13,6 @@ public struct Country: Identifiable {
     public let flag: String?
     public let name: String
 
-    public init(
-        code: String,
-        flag: String?,
-        name: String
-    ) {
-        self.code = code
-        self.flag = flag
-        self.name = name
-    }
-
     public static let countryNotSelected = Country(
         code: "Not selected",
         flag: nil,

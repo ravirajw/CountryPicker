@@ -9,7 +9,7 @@ import Foundation
 
 extension NSLocale {
 
-    public static let countries = getAllCountriesWithNone()
+    static let countries = getAllCountriesWithNone()
 
     static func getAllCountriesWithNone() -> [Country] {
         if var countries = allCountries() {

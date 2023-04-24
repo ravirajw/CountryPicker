@@ -26,8 +26,8 @@ public struct CountryPicker: View {
         selectedCountry.name == Country.countryNotSelected.name ? notSelectedColor : selectedColor
     }
 
-    public init(countryISOCode: Binding<String>) {
-        self._countryISOCode = countryISOCode
+    public init(initialCountryISOCode: Binding<String>) {
+        self._countryISOCode = initialCountryISOCode
     }
 
     public var body: some View {
@@ -60,7 +60,7 @@ public struct CountryPicker: View {
 
 struct CountryPicker_Previews: PreviewProvider {
     static var previews: some View {
-        CountryPicker(countryISOCode: .constant("IN"))
+        CountryPicker(initialCountryISOCode: .constant("IN"))
             .padding(.all)
             .previewLayout(.sizeThatFits)
     }
