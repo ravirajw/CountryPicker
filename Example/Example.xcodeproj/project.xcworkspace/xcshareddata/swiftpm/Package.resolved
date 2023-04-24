@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "countrypicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ravirajw/CountryPicker",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b9d7c082834c2724c653962736caa4ff8d286d7d"
+      }
+    }
+  ],
+  "version" : 2
+}
